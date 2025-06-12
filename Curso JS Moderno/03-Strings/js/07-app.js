@@ -9,4 +9,4 @@ console.log(email.toLowerCase()); // Convierte a minusculas
 
 const precio = 300;
 console.log(precio);
-console.log(precio.toString()); // Convierte el numero a string
+console.log(precio.toString()); // Convierte a string
