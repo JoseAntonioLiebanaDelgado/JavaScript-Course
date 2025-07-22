@@ -1,4 +1,4 @@
-//61. La Diferencia entre Función y Método
+// 61. La Diferencia entre Función y Método
 
 
 // Veamos la diferencia entre un método y una función...

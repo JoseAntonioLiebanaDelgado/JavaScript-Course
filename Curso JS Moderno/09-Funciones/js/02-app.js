@@ -1,7 +1,12 @@
 // 59. La Diferencia entre Function expression y Declaration
 
-// Hoisting 
-// Ademas de las muy notables diferencias en sintaxis, quiero mostrarte las diferencias entre ambas... si llamamos la función antes de declararla, el function expression va a funcionar bien, mientras que el otro nos va a marcar un error..
+// Hoisting es un concepto importante en JavaScript que se refiere a cómo el motor de JavaScript maneja la declaración de funciones y variables. En resumen, el código se ejecuta en dos etapas:
+// 1. Creación: Durante esta etapa, el motor de JavaScript registra todas las funciones y determina las variables.
+// 2. Ejecución: En esta etapa, el motor ejecuta el código línea por línea.
+// Esto significa que las funciones declaradas con la sintaxis de declaración de función (function declaration o function declaration) se pueden llamar antes de su declaración en el código, mientras que las funciones expresadas (function expression) no se pueden llamar antes de su declaración.
+
+
+// Ademas de las notables diferencias en sintaxis, quiero mostrarte las diferencias entre ambas... si llamamos la función antes de declararla, el function expression va a funcionar bien, mientras que el otro nos va a marcar un error..
 
 sumar();
 function sumar() {
@@ -14,16 +19,8 @@ const sumar2 = function() {
 }
 
 
-// Eso pasa porque JavaScript se ejecuta digamos en 2 vueltas - Eso se le conoce como Hoisting , la primer vuelta registra todas las funciones y determina las variables, esta etapa se le llama de creación, 
-// la segunda pasada es la que executa tu codigo, se llama de ejecución.
-// Por lo tanto el primer código funciona porque function se registra primero y después se ejecuta el código.
-// el segundo no funciona porque si bien es una función no es declarada como tal, lo ve más bien como una variable...
-// Esto se le conoce como hosting que basicamente son esas 2 etapas (creación y ejecución)
-// básicamente tu código se ejecuta asi:
-
 //const sumar2;
 sumar2(); // a estas alturas es undefined...
 sumar2 = function() {
     console.log(3 + 3); // pero como ya habiamos llamado la función, se queda como undefined
 }
-// Y esta es pregunta para obtener un trabajo como JS Developer...

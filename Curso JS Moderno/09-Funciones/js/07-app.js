@@ -6,20 +6,26 @@
 
 iniciarApp();
 
+// Iniciar App...
+// En este caso la función iniciarApp es la que inicia la aplicación, y dentro de ella se llama a la segunda función
 function iniciarApp() {
     console.log('Iniciando App...');
     segundaFuncion();
 }
 
-
+// Segunda función...
+// Esta función se encarga de autenticar al usuario, y dentro de ella se llama a la función usuarioAutenticado
+// La función usuarioAutenticado recibe un argumento, que es el nombre del usuario autenticado 
 function segundaFuncion() {
-    console.log('Desde la segunda función...')
+    console.log('Desde la segunda función...');
     usuarioAutenticado('Pablo');
 }
 
+// Usuario autenticado...
+// Esta función recibe un argumento que es el nombre del usuario autenticado, y muestra un mensaje
 function usuarioAutenticado(usuario) {
     console.log('Autenticando usuario...');
-    console.log(`Usuario autenticado con éxito ${usuario} `)
+    console.log(`Usuario autenticado con éxito ${usuario}`);
 }
 
 
