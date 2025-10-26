@@ -85,7 +85,7 @@ navegacion.firstElementChild.textContent = 'Nuevo Enlace...'
 
 
 // vamos a seleccionar el primer enlace...
-const enlace = document.querySelector('a');
+//const enlace = document.querySelector('a');
 console.log(enlace);
 
 
